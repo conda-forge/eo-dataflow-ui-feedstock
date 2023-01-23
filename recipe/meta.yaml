@@ -1,18 +1,18 @@
 {% set name = "eo-dataflow-ui" %}
-{% set version = "2.1.3" %}
+{% set version = "2.1.4" %}
 
-package: 
+package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://gitlab.ifremer.fr/eo-dataflow/eo-dataflow-ui/-/archive/{{ version }}/eo-dataflow-ui-{{ version }}.tar.gz
-  sha256: af5ea444d35415d631696f9f1a12f2a716fda95f3294c20ac947d01ad91e83eb
+  sha256: 51d89ed36fd681b2ea848c559eb9ea5d8ce337328fc04b5dc802ade214674bf7
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  
+
 requirements:
   build:
     - {{ compiler('c') }}
@@ -30,7 +30,7 @@ requirements:
     - simplejson >=3,<4
     - requests <3.0.0
     - ruamel.yaml >=0.16.13
-    
+
 test:
   imports:
     - eo_dataflow_ui
