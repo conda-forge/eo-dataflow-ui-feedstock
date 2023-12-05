@@ -1,5 +1,5 @@
 {% set name = "eo-dataflow-ui" %}
-{% set version = "2.1.5" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.ifremer.fr/eo-dataflow/eo-dataflow-ui/-/archive/{{ version }}/eo-dataflow-ui-{{ version }}.tar.gz
-  sha256: 98248392482be729cf455270510cb1f0ad8bf3b05945a32262daac12b19c5398
+  sha256: b223c40911672e3adc0adfa424fc4c6348d4e5fd824032632cf6012462ec5a43
 
 build:
   number: 0
